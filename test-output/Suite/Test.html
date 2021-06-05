@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 04 15:34:54 PKT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>122 seconds (122542 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T00_arabic_clickPopUp_noThanksButton()'><b>T00_arabic_clickPopUp_noThanksButton</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>5</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T00_arabic_switcharabiclang()'><b>T00_arabic_switcharabiclang</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T00_arabic_xclickPopUp_noThanksButton()'><b>T00_arabic_xclickPopUp_noThanksButton</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>10</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T00_clickPopUp_noThanksButton()'><b>T00_clickPopUp_noThanksButton</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>5</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T01_arabic_clickAccountButton()'><b>T01_arabic_clickAccountButton</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>8</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T01_clickAccountButton()'><b>T01_clickAccountButton</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>11</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T02_arabic_fillregistrationform()'><b>T02_arabic_fillregistrationform</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>2</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T02_fillregistrationform()'><b>T02_fillregistrationform</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>2</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T03_arabic_openeditpage()'><b>T03_arabic_openeditpage</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>20</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T03_goingToAccountsPage()'><b>T03_goingToAccountsPage</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>19</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T04_arabic_clickeditbutton()'><b>T04_arabic_clickeditbutton</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>9</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T04_clickeditbutton()'><b>T04_clickeditbutton</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>7</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T05_arabic_emaildisableverification()'><b>T05_arabic_emaildisableverification</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>4</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T05_emaildisableverification()'><b>T05_emaildisableverification</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>2</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T06_arabic_emailVerification()'><b>T06_arabic_emailVerification</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>2</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T06_emailVerification()'><b>T06_emailVerification</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>2</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T07_arabic_hoverClothingNavigationOption()'><b>T07_arabic_hoverClothingNavigationOption</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>13</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T07_hoverClothingNavigationOption()'><b>T07_hoverClothingNavigationOption</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>13</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T08_arabic_clickingAnItempant()'><b>T08_arabic_clickingAnItempant</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>1</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T08_clickingAnItempant()'><b>T08_clickingAnItempant</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T09_arabic_gettingitem1name()'><b>T09_arabic_gettingitem1name</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>2</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T09_gettingitem1name()'><b>T09_gettingitem1name</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>2</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcases.T10_selectcolor()'><b>T10_selectcolor</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T11_arabic_selectsize()'><b>T11_arabic_selectsize</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>4</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T11_selectsize()'><b>T11_selectsize</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>4</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T12_arabic_clickaddtobagbtn()'><b>T12_arabic_clickaddtobagbtn</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>5</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T12_clickaddtobagbtn()'><b>T12_clickaddtobagbtn</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>5</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T13_arabic_clickbagbuttontoviewcart()'><b>T13_arabic_clickbagbuttontoviewcart</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>5</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T13_clickbagbuttontoviewcart()'><b>T13_clickbagbuttontoviewcart</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>8</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T14_arabic_verifyitemname()'><b>T14_arabic_verifyitemname</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T14_verifyitemname()'><b>T14_verifyitemname</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T15_arabic_clickbagbuttontoviewcart()'><b>T15_arabic_clickbagbuttontoviewcart</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>12</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T15_clickbagbuttontoviewcart()'><b>T15_clickbagbuttontoviewcart</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>13</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T16_arabic_fillform()'><b>T16_arabic_fillform</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>9</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T16_fillform()'><b>T16_fillform</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>8</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+<tr>
+<td title='Testcases.Testcasesarabic.T17_arabic_clickcontinuebtn()'><b>T17_arabic_clickcontinuebtn</b><br>Test class: Testcases.Testcasesarabic</td>
+<td></td>
+<td>5</td>
+<td>Testcases.Testcasesarabic@2667f029</td></tr>
+<tr>
+<td title='Testcases.Testcases.T17_clickcontinuebtn()'><b>T17_clickcontinuebtn</b><br>Test class: Testcases.Testcases</td>
+<td></td>
+<td>5</td>
+<td>Testcases.Testcases@353d0772</td></tr>
+</table><p>
+</body>
+</html>
